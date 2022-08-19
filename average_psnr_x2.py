@@ -7,8 +7,8 @@ ckpt_path = f"checkpoint/x{scale}/FSRCNN-x{scale}.h5"
 model = FSRCNN(scale)
 model.load_weights(ckpt_path)
 
-ls_data = sorted_list("test/SET5/X2/LR")
-ls_labels = sorted_list("test/SET5/X2/HR")
+ls_data = sorted_list("test/SET5/LR")
+ls_labels = sorted_list("test/SET5/HR")
 #ls_data = sorted_list("test/SET14/X2/LR")
 #ls_labels = sorted_list("test/SET14/X2/HR")
 #ls_data = sorted_list("test/BSD100/X2/LR")
